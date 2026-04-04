@@ -31,6 +31,26 @@
       <artifactId>product-core</artifactId>
       <version>0.3.0</version>
     </dependency>
+      <!-- pom.xml — Nouvelles dépendances à ajouter -->
+      <!-- Spring Boot Actuator (probes Kubernetes) -->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-actuator</artifactId>
+      </dependency>
+
+      <!-- Micrometer Prometheus (métriques) -->
+      <dependency>
+          <groupId>io.micrometer</groupId>
+          <artifactId>micrometer-registry-prometheus</artifactId>
+      </dependency>
+
+      <!-- Loki Logback Appender (logs centralisés) -->
+      <dependency>
+          <groupId>com.github.loki4j</groupId>
+          <artifactId>loki-logback-appender</artifactId>
+          <version>1.4.1</version>
+      </dependency>
+
   </dependencies>
   <!-- Dire a Maven ou chercher product-core -->
   <repositories>
